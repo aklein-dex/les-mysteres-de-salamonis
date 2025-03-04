@@ -1,3 +1,3 @@
 # les-mysteres-de-salamonis
 
-hey
+Commencez par `histoire`.
