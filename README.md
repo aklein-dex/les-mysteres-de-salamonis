@@ -1,3 +1,7 @@
-# les-mysteres-de-salamonis
+# Les Mystères de Salamonis
 
-Commencez par `histoire`.
+
+<img src="couverture.jpg" width="300">
+
+
+### Commencez par `histoire`.
