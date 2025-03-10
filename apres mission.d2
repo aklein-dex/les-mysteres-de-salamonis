@@ -1,29 +1,37 @@
 ...@classes
 
-383 -> 253: flammedi
 383 -> 403
-253 -> 35: recherche
-253 -> 133: criminel
-133 -> 148
 403 -> 465: souffledi
+383 -> 253: flammedi
 403 -> 450: maredi
+450 -> 478
 403 -> 427
-450 -> reve
 427 -> 446
 427 -> 120
 446 -> 144: recu\nrecherche
-446 -> 70: gros gnon
+446 -> 70: freres Gros-gnons
 446 -> 400: morsure de chien\ncriminel
+400 ->  7
+7 -> 35: recherche
+7 -> 133: criminel
+7 -> 120
+253 -> 133: criminel
+253 -> 35: recherche
 446 -> 287
 144 -> 459: recherche
 144 -> 32
-459 -> 55: payer
+32 -> 55: payer
+32 -> 121: fuir
+32 -> 141: attaquer
 459 -> 121: fuir
-459 -> 141: combattre
+459 -> 55: payer
+459 -> 141: attaquer
+121 -> 232
 55 -> 70
 141 -> 232
 232 -> 272: E < 4
 232 -> 318: victoire
+318 -> 120
 272 -> 55
 272 -> 342
 342 -> 133
@@ -31,16 +39,36 @@
 221 -> 425: maredi
 221 -> 120
 425 -> 478
+35 -> 56
+133 -> 148
+253 -> 403
+35 -> 133
+56 -> 120
+70 -> 400
 
+465.class: next
+478.class: next
+120.class: next
+287.class: next
 221.class: negative
 148.class: mort
 141.class: negative
 232.class: combat
+121.class: negative
+318.class: negative
 
 232: 232\nMastiff H:6 E:7
 120: 120\nmissions
-55: 55\n-6 or\n+ recu\n-recherche
+55: 55\n-6 or/-3 or\n+ recu\n-recherche
 70: 70\nCarnyx tete de dragon 10 or
 141: 141\n-2 E\n-1 H\n+morsure de chien
 221: 221\n-8 or\n- recherche\n- criminel
 478: 478\n homme qui tremble
+400: 400\nbazar
+120: 120\nmissions
+287: 287\nmissions
+465: 465\nreve
+144: 144\nPique-sous
+121: 121\n-2 E\n+morsure de chien
+318: 318\n+criminel
+56: 56\n-4 or\n-recherche
