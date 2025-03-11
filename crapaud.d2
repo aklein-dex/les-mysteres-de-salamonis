@@ -1,15 +1,15 @@
 ...@classes
 
 88 -> 38
-88 -> 400
-400 -> 38
+(88 -> 400).class: chemin
+(400 -> 38).class: chemin
 400 -> 474: peau de serpent
 474 -> 38
-38 -> 81
+(38 -> 81).class: chemin
 38 -> 14
 14 -> 81
-81 -> 315
-315 -> 335
+(81 -> 315).class: chemin
+(315 -> 335).class: chemin
 14 -> 95
 95 -> 75: connaissance monde
 75 -> 335
@@ -25,10 +25,10 @@
 225 -> 255
 434 -> 255
 335 -> 405
-335 -> 385
+(335 -> 385).class: chemin
 405 -> 268
-385 -> 268
-268 -> 428
+(385 -> 268).class: chemin
+(268 -> 428).class: chemin
 448 -> 350
 428 -> 448: gauche
 448 -> 30: sortilege
@@ -36,10 +36,11 @@
 30 -> 417
 417 -> 295
 428 -> 295: droite
-295 -> 218
+(428 -> 295)[0].class: chemin
+(295 -> 218).class: chemin
 152 -> 198
 218 -> 198
-218 -> 172
+(218 -> 172).class: chemin
 295 -> 239
 239 -> 181
 239 -> 131
@@ -47,10 +48,11 @@
 198 -> 181
 472 -> 181
 172 -> 101: charisme/chanceux
+(172 -> 101)[0].class: chemin
 172 -> 152: malchanceux
 152 -> 131
-101 -> 181
-181 -> 383
+(101 -> 181).class: chemin
+(181 -> 383).class: chemin
 
 131.class: mort
 474.class: bonus
@@ -65,7 +67,8 @@
 350.class: mort
 239.class: negative
 167.class: chance
-315: 315\npeau de serpent
+172.class: chance
+315: 315\n+peau de serpent
 474: 474\n+2 or
 400: 400\nbazar\n_ {
     icon: ./cochon.png
