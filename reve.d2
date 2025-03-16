@@ -57,9 +57,10 @@
 (372 -> 21).class: chemin
 (21 -> 339).class: chemin
 (339 -> 201).class: chemin
+339 -> 200
 65 -> 372
 168 -> 293
-65 -> 293
+65 -> 293: fuite
 21 -> 293
 (201 -> 293).class: chemin
 (293 -> 113).class: chemin
@@ -67,9 +68,9 @@
 113 -> 78
 78 -> 159
 78 -> 237
-159 -> 237
-159 -> 365
-365 -> 237
+159 -> 237: chanceux
+159 -> 365: malchanceux
+365 -> 237: fuite
 365 -> 183
 183 -> 237
 183 -> 266
@@ -77,24 +78,25 @@
 237 -> 285
 285 -> 213
 (285 -> 314).class: chemin
-213 -> 36
+213 -> 36: <= habilete
 36 -> 263
-36 -> 253
+36 -> 353
 263 -> 314
-213 -> 314
-253 -> 314
+213 -> 314: > habilete -1E
+353 -> 314
 (314 -> 300).class: chemin
 314 -> 223
 223 -> 53
-53 -> 155
+53 -> 155: 2d6 <= habilete
 155 -> 300
 223 -> 300
-53 -> 300
+53 -> 300: -1E
 300 -> 102
 (300 -> 303).class: chemin
 102 -> 303
 102 -> 19
 19 -> 317
+19 -> 200
 317 -> 303
 102 -> 68
 68 -> 303
@@ -110,9 +112,11 @@
 19.class: combat
 372.class: combat
 248.class: combat
+240.class: combat
 33.class: combat
 82.class: chance
 71.class: chance
+159.class: chance
 156.class: negative
 343.class: negative
 16.class: negative
@@ -125,9 +129,27 @@
 317.class: bonus
 266.class: bonus
 263.class: bonus
+427.class: next
 
 201: 201\n+25 or\npotion invisibilite\ngant noir
-155: 155\nbouclier
-266: 266\narc
-200: 200\nreveil
+155: 155\n+bouclier
+266: 266\n+arc +1C
+200: 200\nreveil\n+2C\ngarde juste l'or
 147: 147\n+1 or
+427: 427\napres missions
+116: 116\norque H:5 E:4\norque H:5 E:5
+156: 156\n-1E
+343: 343\n-1E
+16: 16\n-1E
+57: 57\n-1E -1H
+248: 248\norque H:6 E:5
+33: 33\norque H:6 E:4
+240: 240\nserpent H:5 E:2
+145: 145\n+1C +1 cle 99
+296: 296\ninfo rompre malediction:\n1) poudre corne de licorne\n2) herbe de meduse\n3) souffle auteur de la malediction
+372: 372\nchef orque H:7 E:6\nserviteur H:5 E:3
+339: 339\n-1d6E
+365: 365\norque H:6 E:4\norque H:5 E:3\norque H:6 E:4\norque H:5 E:2\norque H:4 E:4
+263: 263\n+1C
+19: 19\ngobelin H:5 E:5\ngobelin H:5 E:6
+317: 317\n+fromage
